@@ -1,6 +1,6 @@
 import { ClassSerializerInterceptor, Controller, Get, HttpException, HttpStatus, Inject, Param, UseInterceptors } from '@nestjs/common';
-import { UsersService } from 'src/users/services/users/users.service';
-import { SerializedUser } from 'src/users/types/user';
+import { UsersService } from '../users/users.service';
+import { SerializedUser } from '../users/types/user';
 
 @Controller('users')
 export class UsersController {
